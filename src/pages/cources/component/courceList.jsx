@@ -2,12 +2,12 @@
 const CourceList = ({ list, i, playThisVideo }) => {
     return (
         <li className={``}>
-            <a href={`#homeSubmenu_${i}`} data-toggle="collapse" aria-expanded="false" className="dropdown-toggle"> {list?.cname} </a>
+            <span href={`#homeSubmenu_${i}`} data-toggle="collapse" aria-expanded="false" className="dropdown-toggle"> {list?.cname} </span>
             <ul className="collapse list-unstyled" id={`homeSubmenu_${i}`}>
                 {
                     list?.list.map((item, i) => (
                         <li key={i} >
-                            <a href="#" onClick={()=> playThisVideo(item) } > { item?.name } </a>
+                            <span onClick={()=> playThisVideo(item) } > { item?.name } </span>
                         </li>
                     ))
                 }

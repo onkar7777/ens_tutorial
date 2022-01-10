@@ -36,22 +36,23 @@ code {
   padding: 10px;
 }
 
-#sidebar ul li a {
+#sidebar ul li span {
   padding: 10px;
   font-size: 1.1em;
   display: block;
-  text-decoration: none;
+color: #6d7fcc;
+cursor: pointer;
 }
-#sidebar ul li a:hover {
+#sidebar ul li span:hover {
   color: #7386D5;
   background: #fff;
 }
 
-#sidebar ul li.active > a, a[aria-expanded="true"] {
+#sidebar ul li.active > span, span[aria-expanded="true"] {
   color: #fff;
   background: #6d7fcc;
 }
-a[data-toggle="collapse"] {
+span[data-toggle="collapse"] {
   position: relative;
 }
 
